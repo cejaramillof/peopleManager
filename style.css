@@ -1,0 +1,32 @@
+.login-wrapper {
+  padding: 20px;
+}
+
+.has-error {
+  color: #d03025;
+}
+
+.link {
+  cursor: pointer;
+  color: #4e1c5b;
+}
+
+.people-records {
+  color: #1f4079;
+  font-weight: bold;
+}
+
+.person-image {
+  margin: auto;
+  align-items: center;
+  padding: 20px;
+}
+
+.popover-menu {
+  color: #5f35ec;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100px;
+  background-color: #d9d7c7;
+}

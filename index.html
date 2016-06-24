@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.2.0/toaster.css"></link>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.2/ui-bootstrap.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.2/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-toaster/1.2.0/toaster.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/angular.gravatar/0.4.2/angular-gravatar.min.js"></script>
+
+    <script type="text/javascript" src="./app.js"></script>
+
+    <script type="text/javascript" src="./components/person/person.js"></script>
+    <script type="text/javascript" src="./components/person/controllers/peopleController.js"></script>
+    <script type="text/javascript" src="./components/person/services/peopleService.js"></script>
+    <!-- <script type="text/javascript" src="./components/person/services/peopleFactory.js"></script> -->
+
+    <script type="text/javascript" src="./components/login/login.js"></script>
+    <script type="text/javascript" src="./components/login/controllers/loginController.js"></script>
+    <script type="text/javascript" src="./components/login/controllers/newUserController.js"></script>
+    <script type="text/javascript" src="./components/login/services/userService.js"></script>
+    <script type="text/javascript" src="./components/login/services/userFactory.js"></script>
+
+    <script type="text/javascript" src="./components/error/error.js"></script>
+    <!-- <script type="text/javascript" src="./components/error/controllers/errorController.js"></script> -->
+
+  </head>
+  <body ng-app="peopleManager">
+    <div class="container">
+      <toaster-container></toaster-container>
+      <div ui-view></div>
+    </div>
+  </body>
+</html>

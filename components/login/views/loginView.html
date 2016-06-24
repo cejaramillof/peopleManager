@@ -1,0 +1,58 @@
+<div class="login-wrapper">
+  <div class="row">
+    <div class="col-md-2">
+      <!-- espacio vacío -->
+    </div>
+    <div class="col-xs-8 col-md-8">
+      <p ng-show="loginForm.$submitted && !loginForm.$valid"
+         class="has-error">
+         Fields are invalid or not present.
+      </p>
+      <form role="form" name="loginForm" ng-submit="login()" novalidate>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="form-control" ng-model="user.email" required>
+            <p ng-show="loginForm.email.$invalid && !loginForm.email.$pristine" class="has-error">
+              Email is invalid.
+            </p>
+            <p ng-show="loginForm.email.$error.required && !loginForm.email.$pristine" class="has-error">
+              Email is required.
+            </p>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password" class="form-control" ng-model="user.password" required>
+            <p ng-show="loginForm.password.$error.required && !loginForm.password.$pristine" class="has-error">
+              Password is required.
+            </p>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit" ng-disabled="!loginForm.$valid">Login</button>
+            <button class="btn btn-default" type="reset">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-2">
+      <!-- espacio vacío -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <!-- espacio vacío -->
+    </div>
+    <div class="col-xs-8 col-md-8">
+      <div class="row">
+        <div class="jumbotron">
+          <h1>People Manager App</h1>
+          <p>This is a HTML + Bootstrap + Angular sample app</p>
+        </div>
+      </div>
+      <div class="row">
+        <p>Don't have an account ? please sign in <a class="link" ng-click="signIn()">here</a></p>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <!-- espacio vacío -->
+    </div>
+  </div>
+</div>
